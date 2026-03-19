@@ -89,12 +89,20 @@ View Infrastructure Architecture
 <h3>Automated Database Backup System</h3>
 
 <p>
-Automated backup and retention pipeline with
-deployment triggered from CI/CD.
+Designed and implemented an automated database backup and retention pipeline 
+with scheduled execution and CI/CD-driven deployment.
+Backups are securely stored in DigitalOcean Spaces (S3-compatible object storage), with automated 
+cleanup and logging to ensure data durability, traceability, and operational reliability.
+
+Fully automated offsite backups
+Reduced data loss risk significantly
+Enforced storage lifecycle policy
+Added observability via logging
+Production-ready backup pipeline
 </p>
 
 <div class="tech">
-Linux | Cron | Shell | GitHub Actions
+Linux | Cron | Shell | GitHub Actions | Digital Ocean Space
 </div>
 
 <a href="https://github.com/woletokun/Automated-Database-Backup-System.git">
