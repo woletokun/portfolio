@@ -19,8 +19,7 @@ h2 { text-align: center; margin-bottom: 30px; }
 .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.4); }
 .card h3 { color: #38bdf8; }
 .btn { display: inline-block; margin-top: 15px; padding: 10px 15px; background: #38bdf8; color: #0f172a; border-radius: 8px; text-decoration: none; font-weight: 600; }
-.case-study { background: #1e293b; padding: 30px; border-radius: 16px; margin-top: 40px; }
-.case-study h3 { color: #38bdf8; }
+.badge { display: inline-block; background: #334155; padding: 5px 10px; border-radius: 6px; margin: 3px; font-size: 12px; }
 footer { text-align: center; padding: 30px; background: #020617; }
 </style>
 </head>
@@ -34,102 +33,77 @@ footer { text-align: center; padding: 30px; background: #020617; }
 <a href="https://github.com/woletokun" target="_blank">GitHub</a>
 </header>
 
+<section>
+<h2>About Me</h2>
+<p style="text-align:center; max-width:800px; margin:auto;">
+DevOps Engineer specializing in scalable infrastructure, CI/CD automation, monitoring, and high availability systems across Dev, UAT, and Production environments.
+</p>
+</section>
+
 <section id="projects">
-<h2>Projects (Click for Case Study)</h2>
+<h2>Projects</h2>
 <div class="card-container">
 
 <div class="card">
 <h3>Production Monitoring Stack</h3>
-<p>Centralized monitoring across Dev, UAT, and Production.</p>
-<a class="btn" href="#monitoring">View Case Study</a>
+<p>Centralized monitoring across environments.</p>
+<div>
+<span class="badge">Prometheus</span>
+<span class="badge">Grafana</span>
+<span class="badge">Loki</span>
+<span class="badge">Docker</span>
+<span class="badge">Linux</span>
+</div>
+<a class="btn" href="projects/monitoring.html">Case Study</a>
 </div>
 
 <div class="card">
 <h3>Multi-Tenant SaaS Infrastructure</h3>
 <p>Scalable SaaS deployment with CI/CD.</p>
-<a class="btn" href="#saas">View Case Study</a>
+<div>
+<span class="badge">AWS</span>
+<span class="badge">NGINX</span>
+<span class="badge">Docker</span>
+<span class="badge">GitHub Actions</span>
+</div>
+<a class="btn" href="projects/saas.html">Case Study</a>
 </div>
 
 <div class="card">
 <h3>Automated Database Backup</h3>
-<p>Automated backup system with retention.</p>
-<a class="btn" href="#backup">View Case Study</a>
+<p>Automated backup system.</p>
+<div>
+<span class="badge">Linux</span>
+<span class="badge">Cron</span>
+<span class="badge">Shell</span>
+<span class="badge">CI/CD</span>
+</div>
+<a class="btn" href="projects/backup.html">Case Study</a>
+</div>
+
+<div class="card">
+<h3>EDMS High Availability</h3>
+<p>Enterprise HA system.</p>
+<div>
+<span class="badge">Windows</span>
+<span class="badge">SQL Server</span>
+<span class="badge">AWS</span>
+</div>
+<a class="btn" href="#">Case Study</a>
+</div>
+
+<div class="card">
+<h3>Customer Management Infra</h3>
+<p>Multi-environment infrastructure.</p>
+<div>
+<span class="badge">PostgreSQL</span>
+<span class="badge">WSO2</span>
+<span class="badge">Nginx</span>
+</div>
+<a class="btn" href="#">Case Study</a>
 </div>
 
 </div>
-</section>
-
-<!-- CASE STUDY: MONITORING -->
-<section id="monitoring" class="case-study">
-<h2>Case Study: Production Monitoring Stack</h2>
-
-<h3>Problem</h3>
-<p>There was no centralized visibility across Dev, UAT, and Production environments, making troubleshooting slow and inefficient.</p>
-
-<h3>Solution</h3>
-<p>Designed a lightweight, containerized monitoring system using Prometheus, Grafana, Loki, and Alertmanager deployed on a dedicated monitoring node.</p>
-
-<h3>Architecture</h3>
-<ul>
-<li>DEV server as monitoring hub</li>
-<li>UAT & PROD as monitored nodes</li>
-<li>Metrics + Logs + Alerts unified</li>
-</ul>
-
-<h3>Impact</h3>
-<ul>
-<li>Reduced incident resolution time</li>
-<li>Enabled proactive monitoring</li>
-<li>Zero impact on production workloads</li>
-</ul>
-
-<h3>Tech Stack</h3>
-<p>Prometheus, Grafana, Loki, Docker, Linux</p>
-
-</section>
-
-<!-- CASE STUDY: SAAS -->
-<section id="saas" class="case-study">
-<h2>Case Study: Multi-Tenant SaaS Infrastructure</h2>
-
-<h3>Problem</h3>
-<p>Needed scalable architecture to support multiple tenants with isolated routing and secure access.</p>
-
-<h3>Solution</h3>
-<p>Implemented AWS-based infrastructure with wildcard subdomain routing, load balancing, and CI/CD automation.</p>
-
-<h3>Impact</h3>
-<ul>
-<li>Enabled multi-tenant scalability</li>
-<li>Automated deployments</li>
-<li>Improved system reliability</li>
-</ul>
-
-<h3>Tech Stack</h3>
-<p>AWS, NGINX, Docker, CI/CD</p>
-
-</section>
-
-<!-- CASE STUDY: BACKUP -->
-<section id="backup" class="case-study">
-<h2>Case Study: Automated Database Backup</h2>
-
-<h3>Problem</h3>
-<p>Manual backups were unreliable and prone to human error.</p>
-
-<h3>Solution</h3>
-<p>Built automated backup pipeline with scheduled jobs and secure cloud storage.</p>
-
-<h3>Impact</h3>
-<ul>
-<li>Improved data safety</li>
-<li>Reduced operational risk</li>
-<li>Enabled disaster recovery readiness</li>
-</ul>
-
-<h3>Tech Stack</h3>
-<p>Linux, Cron, Shell, Object Storage</p>
-
 </section>
 
 <footer>
