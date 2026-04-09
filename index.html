@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oyewole Olatokun | DevOps Engineer</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -42,61 +41,112 @@ footer { text-align: center; padding: 30px; background: #020617; }
 <section>
 <h2>About Me</h2>
 <p style="text-align:center; max-width:800px; margin:auto;">
-DevOps Engineer experienced in designing and managing scalable, production-grade infrastructures across Dev, UAT, and Production environments. Skilled in automation, monitoring, CI/CD, and high availability systems.
+DevOps Engineer experienced in designing scalable, production-grade infrastructures across Dev, UAT, and Production environments. Skilled in automation, monitoring, CI/CD, and high availability systems.
 </p>
 </section>
 
 <section id="projects">
-<h2>Featured Projects</h2>
+<h2>Projects</h2>
 <div class="card-container">
 
+<!-- Monitoring -->
 <div class="card">
 <h3>Production Monitoring Stack</h3>
-<p>Centralized monitoring across Dev, UAT, and Production using containerized observability tools.</p>
+<p>Centralized monitoring across Dev, UAT, and Production.</p>
 <ul>
-<li>Zero impact on running applications</li>
-<li>Metrics, Logs, Alerts unified</li>
-<li>Optimized for low resource usage</li>
+<li>Metrics, Logs, Alerts</li>
+<li>Zero production impact</li>
 </ul>
 <div class="tech">
 <span class="badge">Prometheus</span>
 <span class="badge">Grafana</span>
 <span class="badge">Loki</span>
-<span class="badge">Docker</span>
 </div>
-<a class="btn" href="https://github.com/woletokun/Production-Monitoring-Setup-with-Prometheus-Grafana-Loki-Dev-UAT-Prod-Step-by-Step-.git" target="_blank">View Project</a>
+<a class="btn" href="https://github.com/woletokun/Production-Monitoring-Setup-with-Prometheus-Grafana-Loki-Dev-UAT-Prod-Step-by-Step-.git">View</a>
 </div>
 
+<!-- SaaS -->
 <div class="card">
 <h3>Multi-Tenant SaaS Infrastructure</h3>
-<p>Production-grade SaaS deployment with CI/CD and wildcard domain routing.</p>
+<p>Production-grade SaaS deployment with CI/CD.</p>
 <ul>
-<li>Handled multi-tenant routing</li>
-<li>Automated CI/CD pipeline</li>
-<li>Secure SSL via AWS ACM</li>
+<li>Wildcard routing</li>
+<li>AWS ALB + SSL</li>
 </ul>
-<div class="tech">
-<span class="badge">AWS</span>
-<span class="badge">Docker</span>
-<span class="badge">NGINX</span>
-</div>
-<a class="btn" href="https://github.com/woletokun/Multi-Tenant-SaaS-Infrastructure-Deployment-DevOps-.git" target="_blank">View Project</a>
+<div class="tech"><span class="badge">AWS</span><span class="badge">Docker</span></div>
+<a class="btn" href="https://github.com/woletokun/Multi-Tenant-SaaS-Infrastructure-Deployment-DevOps-.git">View</a>
 </div>
 
+<!-- EDMS -->
+<div class="card">
+<h3>EDMS High Availability System</h3>
+<p>Enterprise document system with HA and DR.</p>
+<ul>
+<li>Failover clustering</li>
+<li>Central storage</li>
+</ul>
+<div class="tech"><span class="badge">Windows</span><span class="badge">SQL</span></div>
+<a class="btn" href="https://github.com/woletokun/Electronic-Document-Management-System-EDMS-.git">View</a>
+</div>
+
+<!-- Backup -->
 <div class="card">
 <h3>Automated Database Backup</h3>
-<p>Automated offsite backup system with retention and monitoring.</p>
+<p>Secure automated backup pipeline.</p>
 <ul>
-<li>Reduced risk of data loss</li>
-<li>Secure cloud storage</li>
-<li>Fully automated pipeline</li>
+<li>Offsite backups</li>
+<li>Retention policy</li>
 </ul>
-<div class="tech">
-<span class="badge">Linux</span>
-<span class="badge">Cron</span>
-<span class="badge">CI/CD</span>
+<div class="tech"><span class="badge">Linux</span><span class="badge">Cron</span></div>
+<a class="btn" href="https://github.com/woletokun/Automated-Database-Backup-System.git">View</a>
 </div>
-<a class="btn" href="https://github.com/woletokun/Automated-Database-Backup-System.git" target="_blank">View Project</a>
+
+<!-- CMS -->
+<div class="card">
+<h3>Customer Management System Infra</h3>
+<p>Multi-environment infrastructure with HA and DR.</p>
+<ul>
+<li>PostgreSQL replication</li>
+<li>Middleware integration</li>
+</ul>
+<div class="tech"><span class="badge">PostgreSQL</span><span class="badge">WSO2</span></div>
+<a class="btn" href="https://github.com/woletokun/Customer-Management-System-CMS-Infrastructure-Deployment.git">View</a>
+</div>
+
+<!-- Resource Optimized -->
+<div class="card">
+<h3>Resource Optimized Deployment</h3>
+<p>Multiple apps sharing single backend.</p>
+<ul>
+<li>Cost optimization</li>
+<li>Shared infrastructure</li>
+</ul>
+<div class="tech"><span class="badge">Laravel</span><span class="badge">Nginx</span></div>
+<a class="btn" href="https://github.com/woletokun/Resource-Optimized-Multi-Application-Deployment-Strategy.git">View</a>
+</div>
+
+<!-- CI/CD -->
+<div class="card">
+<h3>CI/CD Pipeline</h3>
+<p>Automated deployment pipelines.</p>
+<div class="tech"><span class="badge">Docker</span><span class="badge">GitHub Actions</span></div>
+<a class="btn" href="https://github.com/woletokun">View</a>
+</div>
+
+<!-- EDR -->
+<div class="card">
+<h3>Endpoint Detection & Response</h3>
+<p>Security monitoring platform.</p>
+<div class="tech"><span class="badge">Python</span><span class="badge">Security</span></div>
+<a class="btn" href="https://github.com/woletokun">View</a>
+</div>
+
+<!-- Atomic -->
+<div class="card">
+<h3>Atomic Deployment</h3>
+<p>Zero downtime deployments with rollback.</p>
+<div class="tech"><span class="badge">Docker</span><span class="badge">CI/CD</span></div>
+<a class="btn" href="https://github.com/woletokun">View</a>
 </div>
 
 </div>
@@ -105,49 +155,17 @@ DevOps Engineer experienced in designing and managing scalable, production-grade
 <section>
 <h2>Architecture & Visuals</h2>
 <div class="image-gallery">
-
-<figure class="image-card">
-<img src="images/edms-architecture.png">
-<figcaption><strong>EDMS Architecture</strong><p>High availability system design</p></figcaption>
-</figure>
-
-<figure class="image-card">
-<img src="images/failover-diagram.png">
-<figcaption><strong>Failover Flow</strong><p>Cluster failover sequence</p></figcaption>
-</figure>
-
-<figure class="image-card">
-<img src="images/backup-architecture.png">
-<figcaption><strong>Backup System</strong><p>Automated backup pipeline</p></figcaption>
-</figure>
-
-<figure class="image-card">
-<img src="images/environment-flow.png">
-<figcaption><strong>Environment Flow</strong><p>Dev → UAT → Prod lifecycle</p></figcaption>
-</figure>
-
-<figure class="image-card">
-<img src="images/resource-optimized-img.png">
-<figcaption><strong>Optimized Infra</strong><p>Resource-efficient architecture</p></figcaption>
-</figure>
-
-<figure class="image-card">
-<img src="images/monitoring-setup.png">
-<figcaption><strong>Monitoring Setup</strong><p>Central observability stack</p></figcaption>
-</figure>
-
+<figure class="image-card"><img src="images/edms-architecture.png"><figcaption>EDMS Architecture</figcaption></figure>
+<figure class="image-card"><img src="images/failover-diagram.png"><figcaption>Failover</figcaption></figure>
+<figure class="image-card"><img src="images/backup-architecture.png"><figcaption>Backup</figcaption></figure>
+<figure class="image-card"><img src="images/environment-flow.png"><figcaption>Environment Flow</figcaption></figure>
+<figure class="image-card"><img src="images/resource-optimized-img.png"><figcaption>Optimized Infra</figcaption></figure>
+<figure class="image-card"><img src="images/monitoring-setup.png"><figcaption>Monitoring</figcaption></figure>
 </div>
 </section>
 
-<section>
-<h2>Contact</h2>
-<p style="text-align:center;">
-GitHub: <a href="https://github.com/woletokun" target="_blank">github.com/woletokun</a>
-</p>
-</section>
-
 <footer>
-<p>© 2026 Oyewole Olatokun | DevOps Engineer</p>
+<p>© 2026 Oyewole Olatokun</p>
 </footer>
 
 </body>
