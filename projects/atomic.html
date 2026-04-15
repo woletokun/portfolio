@@ -1,21 +1,168 @@
-<!-- ATOMIC -->
 <!-- Save as: projects/atomic.html -->
 <!DOCTYPE html>
-<html>
-<head><title>Atomic Deployment</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atomic Deployment Strategy | DevOps Project</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 20px 40px;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #38bdf8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1e293b;
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin-right: 8px;
+      font-size: 14px;
+    }
+
+    .architecture img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #94a3b8;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+
 <body>
-<h1>Atomic Deployment Strategy</h1>
-<h2>Problem</h2>
-<p>Deployments caused downtime.</p>
-<h2>Solution</h2>
-<p>Implemented zero-downtime deployment with rollback.</p>
-<h2>Impact</h2>
-<ul><li>No downtime deployments</li><li>Safe rollbacks</li></ul>
-<h2>Architecture</h2>
-<img src="../images/atomic.png" width="600">
-<h2>Tech Stack</h2>
-<p>Docker, CI/CD</p>
-<h2>Lessons Learned</h2>
-<ul><li>Rollback strategy is essential</li></ul>
+
+<header>
+  <h1>Atomic Deployment Strategy</h1>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      This project implements an <strong>atomic (zero-downtime) deployment strategy</strong> 
+      designed to eliminate service interruptions and ensure safe, reversible releases 
+      in production environments.
+    </p>
+  </section>
+
+  <section>
+    <h2>Problem Statement</h2>
+    <p>
+      Traditional deployment methods introduced downtime during updates, negatively impacting 
+      user experience and system reliability. Rollbacks were manual and error-prone.
+    </p>
+  </section>
+
+  <section>
+    <h2>Solution</h2>
+    <p>
+      Designed and implemented a deployment pipeline using atomic release principles:
+    </p>
+    <ul>
+      <li>Blue-Green / Immutable deployments</li>
+      <li>Versioned release directories</li>
+      <li>Symlink switching for instant cutover</li>
+      <li>Automated rollback mechanism</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Architecture</h2>
+    <div class="architecture">
+      <img src="../images/atomic.png" alt="Atomic Deployment Architecture Diagram">
+    </div>
+  </section>
+
+  <section>
+    <h2>Tech Stack</h2>
+    <div>
+      <span class="tag">Docker</span>
+      <span class="tag">CI/CD (GitHub Actions / Jenkins)</span>
+      <span class="tag">Nginx</span>
+      <span class="tag">Linux</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Impact</h2>
+    <ul>
+      <li>Achieved zero-downtime deployments</li>
+      <li>Reduced deployment risk with instant rollback</li>
+      <li>Improved system reliability and uptime</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Lessons Learned</h2>
+    <ul>
+      <li>Rollback strategies must be automated, not manual</li>
+      <li>Observability is critical during deployments</li>
+      <li>Immutable infrastructure simplifies debugging</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2025 Oyewole
+</footer>
+
 </body>
 </html>
