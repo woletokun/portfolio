@@ -159,91 +159,247 @@ border:1px solid #334155;
 </div>
 </section>
 
-<body>
+<section id="projects" style="padding:60px 20px; max-width:1100px; margin:auto;">
 
-<header>
-<h1>Oyewole Olatokun</h1>
-<p>DevOps Engineer | Cloud | Automation | Observability</p>
-<a href="#projects">View Projects</a>
-<a href="https://github.com/woletokun" target="_blank">GitHub</a>
-</header>
+<h2 style="text-align:center; margin-bottom:30px;">
+Production Systems & Infrastructure Portfolio
+</h2>
 
-<section>
-<h2>About Me</h2>
-<p style="text-align:center; max-width:800px; margin:auto;">
-DevOps Engineer specializing in scalable infrastructure, CI/CD automation, monitoring, and high availability systems across Dev, UAT, and Production environments.
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+gap:25px;
+">
+
+<!-- PROJECT CARD 1 -->
+<div style="
+background:#1e293b;
+padding:25px;
+border-radius:16px;
+border:1px solid #334155;
+transition:0.3s;
+">
+
+<h3 style="color:#38bdf8;">Production Monitoring Stack</h3>
+<p style="color:#94a3b8;">
+Enterprise observability system across Dev, UAT, and Production environments.
 </p>
-</section>
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="card-container">
-
-<div class="card">
-<h3>Production Monitoring Stack</h3>
-<p>Centralized monitoring across environments.</p>
-<div>
+<div style="margin:10px 0;">
 <span class="badge">Prometheus</span>
 <span class="badge">Grafana</span>
 <span class="badge">Loki</span>
 <span class="badge">Docker</span>
-<span class="badge">Linux</span>
-</div>
-<a class="btn" href="projects/monitoring.html">Case Study</a>
 </div>
 
-<div class="card">
-<h3>Multi-Tenant SaaS Infrastructure</h3>
-<p>Scalable SaaS deployment with CI/CD.</p>
-<div>
+<div style="display:flex; gap:10px; margin-top:15px;">
+<a href="projects/monitoring.html" style="
+flex:1;
+text-align:center;
+background:#38bdf8;
+color:#0f172a;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+">Case Study</a>
+
+<a href="https://github.com/woletokun/monitoring-stack" target="_blank" style="
+flex:1;
+text-align:center;
+background:#0f172a;
+border:1px solid #334155;
+color:#e2e8f0;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+">GitHub</a>
+</div>
+
+</div>
+
+<!-- PROJECT CARD 2 -->
+<div style="
+background:#1e293b;
+padding:25px;
+border-radius:16px;
+border:1px solid #334155;
+">
+
+<h3 style="color:#38bdf8;">Multi-Tenant SaaS Infrastructure</h3>
+<p style="color:#94a3b8;">
+Scalable cloud architecture with CI/CD automation and containerized deployment.
+</p>
+
+<div style="margin:10px 0;">
 <span class="badge">AWS</span>
 <span class="badge">NGINX</span>
 <span class="badge">Docker</span>
 <span class="badge">GitHub Actions</span>
 </div>
-<a class="btn" href="projects/saas.html">Case Study</a>
+
+<div style="display:flex; gap:10px; margin-top:15px;">
+<a href="projects/saas.html" style="
+flex:1;
+text-align:center;
+background:#38bdf8;
+color:#0f172a;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+">Case Study</a>
+
+<a href="https://github.com/woletokun/saas-infrastructure" target="_blank" style="
+flex:1;
+text-align:center;
+background:#0f172a;
+border:1px solid #334155;
+color:#e2e8f0;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+">GitHub</a>
 </div>
 
-<div class="card">
-<h3>Automated Database Backup</h3>
-<p>Automated backup system.</p>
-<div>
+</div>
+
+<!-- PROJECT CARD 3 -->
+<div style="
+background:#1e293b;
+padding:25px;
+border-radius:16px;
+border:1px solid #334155;
+">
+
+<h3 style="color:#38bdf8;">Automated Backup System</h3>
+<p style="color:#94a3b8;">
+Scheduled backup automation with rollback and disaster recovery support.
+</p>
+
+<div style="margin:10px 0;">
 <span class="badge">Linux</span>
 <span class="badge">Cron</span>
 <span class="badge">Shell</span>
 <span class="badge">CI/CD</span>
 </div>
-<a class="btn" href="projects/backup.html">Case Study</a>
+
+<div style="display:flex; gap:10px; margin-top:15px;">
+<a href="projects/backup.html" style="
+flex:1;
+text-align:center;
+background:#38bdf8;
+color:#0f172a;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+">Case Study</a>
+
+<a href="https://github.com/woletokun/db-backup-automation" target="_blank" style="
+flex:1;
+text-align:center;
+background:#0f172a;
+border:1px solid #334155;
+color:#e2e8f0;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+">GitHub</a>
 </div>
 
-<div class="card">
-<h3>EDMS High Availability</h3>
-<p>Enterprise HA system.</p>
-<div>
-<span class="badge">Windows</span>
+</div>
+
+<!-- PROJECT CARD 4 -->
+<div style="
+background:#1e293b;
+padding:25px;
+border-radius:16px;
+border:1px solid #334155;
+">
+
+<h3 style="color:#38bdf8;">EDMS High Availability System</h3>
+<p style="color:#94a3b8;">
+Enterprise document management system with failover and HA architecture.
+</p>
+
+<div style="margin:10px 0;">
+<span class="badge">Windows Server</span>
 <span class="badge">SQL Server</span>
 <span class="badge">AWS</span>
 </div>
-<a class="btn" href="#">Case Study</a>
+
+<div style="display:flex; gap:10px; margin-top:15px;">
+<a href="projects/edms.html" style="
+flex:1;
+text-align:center;
+background:#38bdf8;
+color:#0f172a;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+">Case Study</a>
+
+<a href="https://github.com/woletokun/edms-ha-system" target="_blank" style="
+flex:1;
+text-align:center;
+background:#0f172a;
+border:1px solid #334155;
+color:#e2e8f0;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+">GitHub</a>
 </div>
 
-<div class="card">
-<h3>Customer Management Infra</h3>
-<p>Multi-environment infrastructure.</p>
-<div>
+</div>
+
+<!-- PROJECT CARD 5 -->
+<div style="
+background:#1e293b;
+padding:25px;
+border-radius:16px;
+border:1px solid #334155;
+">
+
+<h3 style="color:#38bdf8;">Customer Management Infra</h3>
+<p style="color:#94a3b8;">
+Enterprise API and CRM integration infrastructure for scalable systems.
+</p>
+
+<div style="margin:10px 0;">
 <span class="badge">PostgreSQL</span>
 <span class="badge">WSO2</span>
 <span class="badge">Nginx</span>
 </div>
-<a class="btn" href="#">Case Study</a>
+
+<div style="display:flex; gap:10px; margin-top:15px;">
+<a href="projects/cms.html" style="
+flex:1;
+text-align:center;
+background:#38bdf8;
+color:#0f172a;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+">Case Study</a>
+
+<a href="https://github.com/woletokun/customer-management-infra" target="_blank" style="
+flex:1;
+text-align:center;
+background:#0f172a;
+border:1px solid #334155;
+color:#e2e8f0;
+padding:10px;
+border-radius:8px;
+text-decoration:none;
+">GitHub</a>
+</div>
+
 </div>
 
 </div>
 </section>
-
-<footer>
-<p>© 2026 Oyewole Olatokun | DevOps Engineer</p>
-</footer>
-
-</body>
 </html>
