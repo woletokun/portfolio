@@ -1,26 +1,170 @@
+<!-- Save as: projects/backup.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Backup Case Study</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Database Backup | DevOps Project</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 20px 40px;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #38bdf8;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #1e293b;
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin-right: 8px;
+      font-size: 14px;
+    }
+
+    .architecture img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #94a3b8;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>Automated Database Backup</h1>
+<header>
+  <h1>Automated Database Backup System</h1>
+</header>
 
-<h2>Problem</h2>
-<p>Manual backups were unreliable.</p>
+<div class="container">
 
-<h2>Solution</h2>
-<p>Automated backup pipeline with retention policies.</p>
+  <section>
+    <h2>Overview</h2>
+    <p>
+      This project focuses on designing a reliable and automated database backup system 
+      to ensure data durability, integrity, and rapid recovery in case of failure.
+    </p>
+  </section>
 
-<h2>Architecture</h2>
-<img src="../images/backup-architecture.png" width="600">
+  <section>
+    <h2>Problem Statement</h2>
+    <p>
+      Manual backup processes were inconsistent and prone to human error, leading to 
+      potential data loss and lack of recovery guarantees during critical incidents.
+    </p>
+  </section>
 
-<h2>Impact</h2>
-<ul>
-<li>Improved data safety</li>
-<li>Reduced operational risk</li>
-</ul>
+  <section>
+    <h2>Solution</h2>
+    <p>
+      Implemented an automated backup pipeline with the following features:
+    </p>
+    <ul>
+      <li>Scheduled backups using cron jobs / CI pipelines</li>
+      <li>Secure storage (cloud or remote servers)</li>
+      <li>Retention policy for lifecycle management</li>
+      <li>Compression and encryption of backup data</li>
+      <li>Automated restore testing for validation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Architecture</h2>
+    <div class="architecture">
+      <img src="../images/backup-architecture.png" alt="Backup System Architecture Diagram">
+    </div>
+  </section>
+
+  <section>
+    <h2>Tech Stack</h2>
+    <div>
+      <span class="tag">Bash / Shell Scripting</span>
+      <span class="tag">Cron Jobs</span>
+      <span class="tag">AWS S3 / Cloud Storage</span>
+      <span class="tag">Docker</span>
+      <span class="tag">CI/CD Pipelines</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Impact</h2>
+    <ul>
+      <li>Improved data safety and reliability</li>
+      <li>Reduced operational risk and human error</li>
+      <li>Enabled fast recovery during incidents</li>
+      <li>Ensured compliance with data retention policies</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Lessons Learned</h2>
+    <ul>
+      <li>Backups are useless without tested restore procedures</li>
+      <li>Encryption is critical for sensitive data</li>
+      <li>Monitoring and alerting should be integrated</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Oyewole Project
+</footer>
 
 </body>
 </html>
