@@ -4,420 +4,282 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oyewole Olatokun | DevOps Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #0b1220;
+  color: #e2e8f0;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  padding: 100px 20px;
+  background: radial-gradient(circle at top, #1e3a8a, #0b1220 60%);
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin: 0;
+}
+
+.hero p {
+  color: #94a3b8;
+  max-width: 700px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: #0b1220;
+}
+
+.btn-secondary {
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+}
+
+/* BADGES */
+.badge {
+  display: inline-block;
+  background: #1e293b;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin: 4px;
+  font-size: 12px;
+}
+
+/* CARDS */
+.card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+/* METRICS */
+.metric {
+  background: #111827;
+  border: 1px solid #1f2937;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.metric h3 {
+  color: #38bdf8;
+  margin: 0;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #1f2937;
+}
+
+footer a {
+  color: #38bdf8;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+</style>
 </head>
+
 <body>
-<!DOCTYPE html>
-<html lang="en">
-<header style="
-position: relative;
-text-align: left;
-padding: 100px 20px;
-background: radial-gradient(circle at top, #1e3a8a, #0f172a 60%);
-overflow: hidden;
-">
 
-<!-- Glow background effect -->
-<div style="
-position:absolute;
-top:-100px;
-right:-100px;
-width:300px;
-height:300px;
-background:#38bdf8;
-filter:blur(120px);
-opacity:0.4;
-"></div>
+<!-- HERO -->
+<section class="hero">
+<div class="container">
 
-<div style="max-width:1100px; margin:auto; position:relative;">
-
-<h1 style="font-size:52px; margin:0;">
-Oyewole Olatokun
-</h1>
-
-<section style="padding:80px 20px; max-width:900px; margin:auto;">
-
-<h2 style="text-align:center; margin-bottom:30px;">
-Engineering Profile Summary
-</h2>
-
-<div style="
-background:#1e293b;
-padding:30px;
-border-radius:16px;
-border:1px solid #334155;
-line-height:1.7;
-">
-
-<p style="color:#e2e8f0; font-size:16px;">
-I am a DevOps Engineer focused on building, automating, and scaling production-grade infrastructure across multi-environment systems (Dev, UAT, and Production).
-</p>
-
-<p style="color:#94a3b8;">
-My core expertise lies in designing resilient architectures, implementing CI/CD pipelines, and ensuring system reliability through observability and automation.
-</p>
+<h1>Oyewole Olatokun</h1>
+<p>DevOps Engineer | Cloud Infrastructure | CI/CD Automation | Observability</p>
 
 <div style="margin-top:20px;">
-
-<h3 style="color:#38bdf8;">Core Engineering Focus</h3>
-
-<span class="badge">Cloud Infrastructure Design</span>
-<span class="badge">CI/CD Automation</span>
-<span class="badge">System Observability</span>
-<span class="badge">High Availability (HA)</span>
-<span class="badge">Disaster Recovery</span>
-<span class="badge">Containerization</span>
-
+<a href="#projects" class="btn btn-primary">View Projects</a>
+<a href="https://github.com/woletokun" target="_blank" class="btn btn-secondary">GitHub</a>
 </div>
 
 <div style="margin-top:25px;">
-
-<h3 style="color:#38bdf8;">Engineering Philosophy</h3>
-
-<p style="color:#94a3b8;">
-I build systems with a production-first mindset — focusing on uptime, scalability, automation, and operational efficiency. Every system is designed to reduce manual intervention and improve reliability at scale.
-</p>
-
-</div>
-
-<div style="margin-top:25px;">
-
-<h3 style="color:#38bdf8;">Operational Impact</h3>
-
-<div style="
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-gap:15px;
-margin-top:10px;
-">
-
-<div style="background:#0f172a; padding:15px; border-radius:12px; text-align:center;">
-<strong style="color:#38bdf8;">200+</strong>
-<p style="color:#94a3b8;">Concurrent System Users</p>
-</div>
-
-<div style="background:#0f172a; padding:15px; border-radius:12px; text-align:center;">
-<strong style="color:#38bdf8;">99.9%</strong>
-<p style="color:#94a3b8;">Infrastructure Uptime</p>
-</div>
-
-<div style="background:#0f172a; padding:15px; border-radius:12px; text-align:center;">
-<strong style="color:#38bdf8;">Multi-Env</strong>
-<p style="color:#94a3b8;">Dev / UAT / Production</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CTA Buttons -->
-<div style="margin-top:25px;">
-<a href="#projects" style="
-background:#38bdf8;
-color:#0f172a;
-padding:12px 18px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-margin-right:10px;
-">
-View Projects
-</a>
-
-<a href="https://github.com/woletokun" target="_blank" style="
-background:#1e293b;
-color:#e2e8f0;
-padding:12px 18px;
-border-radius:8px;
-text-decoration:none;
-font-weight:600;
-border:1px solid #334155;
-">
-GitHub Profile
-</a>
-</div>
-
-<!-- DevOps badges -->
-<div style="margin-top:30px;">
 <span class="badge">AWS</span>
 <span class="badge">Docker</span>
 <span class="badge">Kubernetes</span>
 <span class="badge">Prometheus</span>
 <span class="badge">Grafana</span>
-<span class="badge">CI/CD</span>
-</div>
-
-</div>
-</header>
-
-<section style="padding:60px 20px; max-width:1100px; margin:auto;">
-
-<h2 style="text-align:center; margin-bottom:30px;">System Impact & Engineering Metrics</h2>
-
-<div style="
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
-gap:20px;
-">
-
-<!-- Metric 1 -->
-<div style="
-background:#1e293b;
-padding:25px;
-border-radius:16px;
-text-align:center;
-border:1px solid #334155;
-">
-<h3 style="color:#38bdf8; font-size:28px; margin:0;">99.9%</h3>
-<p style="color:#94a3b8;">System Uptime</p>
-</div>
-
-<!-- Metric 2 -->
-<div style="
-background:#1e293b;
-padding:25px;
-border-radius:16px;
-text-align:center;
-border:1px solid #334155;
-">
-<h3 style="color:#38bdf8; font-size:28px; margin:0;">200+</h3>
-<p style="color:#94a3b8;">Concurrent Agents Supported</p>
-</div>
-
-<!-- Metric 3 -->
-<div style="
-background:#1e293b;
-padding:25px;
-border-radius:16px;
-text-align:center;
-border:1px solid #334155;
-">
-<h3 style="color:#38bdf8; font-size:28px; margin:0;">8+</h3>
-<p style="color:#94a3b8;">Production Systems Built</p>
-</div>
-
-<!-- Metric 4 -->
-<div style="
-background:#1e293b;
-padding:25px;
-border-radius:16px;
-text-align:center;
-border:1px solid #334155;
-">
-<h3 style="color:#38bdf8; font-size:28px; margin:0;">CI/CD</h3>
-<p style="color:#94a3b8;">Fully Automated Deployments</p>
-</div>
-
-<!-- Metric 5 -->
-<div style="
-background:#1e293b;
-padding:25px;
-border-radius:16px;
-text-align:center;
-border:1px solid #334155;
-">
-<h3 style="color:#38bdf8; font-size:28px; margin:0;">Multi-Env</h3>
-<p style="color:#94a3b8;">Dev / UAT / Production</p>
-</div>
-
-<!-- Metric 6 -->
-<div style="
-background:#1e293b;
-padding:25px;
-border-radius:16px;
-text-align:center;
-border:1px solid #334155;
-">
-<h3 style="color:#38bdf8; font-size:28px; margin:0;">24/7</h3>
-<p style="color:#94a3b8;">Monitoring Coverage</p>
 </div>
 
 </div>
 </section>
 
-<section id="projects" style="padding:60px 20px; max-width:1100px; margin:auto;">
+<!-- ABOUT -->
+<section>
+<div class="container">
 
-<h2 style="text-align:center; margin-bottom:30px;">
-Production Systems & Infrastructure Portfolio
-</h2>
+<h2>Engineering Profile</h2>
 
-<div style="
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-gap:25px;
-">
+<div class="card-content" style="background:#111827; border-radius:16px; padding:30px; border:1px solid #1f2937;">
+<p>
+DevOps Engineer specializing in scalable infrastructure, automation, and high availability systems across production environments.
+</p>
+</div>
 
-<!-- MONITORING -->
+</div>
+</section>
+
+<!-- METRICS -->
+<section>
+<div class="container">
+
+<h2 style="text-align:center;">System Impact</h2>
+
+<div class="grid">
+
+<div class="metric"><h3>99.9%</h3><p>Uptime</p></div>
+<div class="metric"><h3>200+</h3><p>Users</p></div>
+<div class="metric"><h3>8+</h3><p>Systems</p></div>
+<div class="metric"><h3>CI/CD</h3><p>Automation</p></div>
+
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<div class="container">
+
+<h2 style="text-align:center;">Projects</h2>
+
+<div class="grid">
+
 <div class="card">
+<img src="images/monitoring-setup.png">
+<div class="card-content">
 <h3>Monitoring Stack</h3>
-<p>Centralized observability across environments.</p>
-<div>
-<span class="badge">Prometheus</span>
-<span class="badge">Grafana</span>
-<span class="badge">Loki</span>
+<p>Observability system</p>
+<a class="btn btn-primary" href="projects/monitoring.html">View</a>
 </div>
-<a class="btn" href="projects/monitoring.html">Case Study</a>
 </div>
 
-<!-- SAAS -->
 <div class="card">
-<h3>SaaS Infrastructure</h3>
-<p>Multi-tenant scalable cloud system.</p>
-<div>
-<span class="badge">AWS</span>
-<span class="badge">Docker</span>
-<span class="badge">NGINX</span>
+<img src="images/backup-architecture.png">
+<div class="card-content">
+<h3>Backup System</h3>
+<p>Automated backups</p>
+<a class="btn btn-primary" href="projects/backup.html">View</a>
 </div>
-<a class="btn" href="projects/saas.html">Case Study</a>
 </div>
 
-<!-- SAAS PLATFORM -->
 <div class="card">
-<h3>SaaS Platform Architecture</h3>
-<p>Full production SaaS system design.</p>
-<div>
-<span class="badge">Cloud</span>
-<span class="badge">CI/CD</span>
+<img src="images/cms-architecture.png">
+<div class="card-content">
+<h3>CMS Infra</h3>
+<p>Enterprise API system</p>
+<a class="btn btn-primary" href="projects/cms.html">View</a>
 </div>
-<a class="btn" href="projects/saas-platform.html">Case Study</a>
 </div>
 
-<!-- BACKUP -->
 <div class="card">
-<h3>Backup Automation</h3>
-<p>Automated database backup system.</p>
-<div>
-<span class="badge">Cron</span>
-<span class="badge">Shell</span>
+<img src="images/edms-architecture.png">
+<div class="card-content">
+<h3>EDMS HA</h3>
+<p>High availability system</p>
+<a class="btn btn-primary" href="projects/edms.html">View</a>
 </div>
-<a class="btn" href="projects/backup.html">Case Study</a>
 </div>
 
-<!-- CICD -->
 <div class="card">
-<h3>CI/CD Pipeline</h3>
-<p>Automated deployment pipeline.</p>
-<div>
-<span class="badge">GitHub Actions</span>
-<span class="badge">Docker</span>
+<img src="images/architecture.png">
+<div class="card-content">
+<h3>SaaS Platform</h3>
+<p>Cloud system</p>
+<a class="btn btn-primary" href="projects/saas.html">View</a>
 </div>
-<a class="btn" href="projects/cicd.html">Case Study</a>
 </div>
 
-<!-- CMS -->
-<div class="card">
-<h3>Customer Management Infra</h3>
-<p>Enterprise CRM + API integration.</p>
-<div>
-<span class="badge">WSO2</span>
-<span class="badge">PostgreSQL</span>
-</div>
-<a class="btn" href="projects/cms.html">Case Study</a>
-</div>
-
-<!-- EDMS -->
-<div class="card">
-<h3>EDMS HA System</h3>
-<p>High availability enterprise system.</p>
-<div>
-<span class="badge">SQL Server</span>
-<span class="badge">Windows</span>
-</div>
-<a class="btn" href="projects/edms.html">Case Study</a>
-</div>
-
-<!-- EDR -->
-<div class="card">
-<h3>EDR / Failover System</h3>
-<p>Disaster recovery and failover architecture.</p>
-<div>
-<span class="badge">HA</span>
-<span class="badge">Failover</span>
-</div>
-<a class="btn" href="projects/edr.html">Case Study</a>
-</div>
-
-<!-- RESOURCE -->
-<div class="card">
-<h3>Resource Optimization</h3>
-<p>Performance and system optimization.</p>
-<div>
-<span class="badge">CPU</span>
-<span class="badge">Memory</span>
-</div>
-<a class="btn" href="projects/resource.html">Case Study</a>
-</div>
-
-<!-- ATOMIC -->
-<div class="card">
-<h3>Atomic Deployment System</h3>
-<p>Safe and consistent deployment strategy.</p>
-<div>
-<span class="badge">Atomic</span>
-<span class="badge">Deployments</span>
-</div>
-<a class="btn" href="projects/atomic.html">Case Study</a>
 </div>
 
 </div>
 </section>
-<section style="
-padding:80px 20px;
-text-align:center;
-background:linear-gradient(135deg, #0ea5e9, #6366f1);
-">
 
-<h2 style="margin-bottom:15px;">
-Let’s Build Scalable Systems Together
-</h2>
+<!-- CTA -->
+<section class="cta">
+<div class="container">
 
-<p style="max-width:600px; margin:auto; margin-bottom:25px;">
-I’m open to DevOps, Cloud, and Infrastructure Engineering roles where I can design, automate, and scale production systems.
-</p>
+<h2>Let’s Build Scalable Systems</h2>
+<p>Open to DevOps & Cloud roles</p>
 
-<div style="margin-top:20px;">
+<a href="mailto:wole.tokun@gmail.com" class="btn btn-primary">Contact Me</a>
+
 </div>
 </section>
 
-<footer style="
-background:#020617;
-padding:40px 20px;
-text-align:center;
-border-top:1px solid #334155;
-">
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Oyewole Olatokun</p>
 
-<p style="margin-bottom:10px;">
-© 2026 Oyewole Olatokun
-</p>
-
-<p style="color:#94a3b8;">
-DevOps Engineer | Cloud Infrastructure | Automation | Observability
-</p>
-
-<div style="margin-top:15px;">
-
-<a href="https://github.com/woletokun" target="_blank" style="margin:0 10px; color:#38bdf8;">
-GitHub
-</a>
-
-<a href="#" target="https://www.linkedin.com/in/olatokun-oyewole-63917331/" style="margin:0 10px; color:#38bdf8;">
-LinkedIn
-</a>
-
-<a href="mailto:wole.tokun@gmail.com" style="margin:0 10px; color:#38bdf8;">
-Email
-</a>
-
-<a href="#" style="margin:0 10px; color:#38bdf8;">
-Download CV
-</a>
-
+<div>
+<a href="https://github.com/woletokun">GitHub</a>
+<a href="#">LinkedIn</a>
+<a href="mailto:wole.tokun@gmail.com">Email</a>
 </div>
 
 </footer>
-</html>
+
 </body>
 </html>
