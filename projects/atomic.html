@@ -1,168 +1,56 @@
-<!-- Save as: projects/atomic.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atomic Deployment Strategy | DevOps Project</title>
-
-  <style>
-    body {
-      font-family: "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #020617;
-      padding: 20px 40px;
-      border-bottom: 1px solid #1e293b;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-      color: #38bdf8;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    section {
-      margin-bottom: 40px;
-      padding: 20px;
-      background: #020617;
-      border: 1px solid #1e293b;
-      border-radius: 10px;
-    }
-
-    h2 {
-      color: #38bdf8;
-      margin-bottom: 10px;
-      font-size: 22px;
-    }
-
-    p {
-      margin: 10px 0;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #1e293b;
-      padding: 6px 12px;
-      border-radius: 6px;
-      margin-right: 8px;
-      font-size: 14px;
-    }
-
-    .architecture img {
-      width: 100%;
-      max-width: 800px;
-      border-radius: 8px;
-      margin-top: 15px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #94a3b8;
-      border-top: 1px solid #1e293b;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atomic Deployment Strategy | Oyewole Olatokun</title>
+<meta name="description" content="Zero-downtime releases with instant, automated rollback.">
+<meta name="author" content="Oyewole Olatokun">
+<meta name="theme-color" content="#0b1220">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atomic Deployment Strategy | Oyewole Olatokun">
+<meta property="og:description" content="Zero-downtime releases with instant, automated rollback.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
-
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="../index.html" aria-label="Oyewole Olatokun home"><span class="logo" aria-hidden="true">OO</span>Oyewole Olatokun</a>
+<nav aria-label="Primary"><ul>
+<li><a href="../index.html#about">About</a></li>
+<li><a href="../index.html#skills">Skills</a></li>
+<li><a href="../index.html#projects">Projects</a></li>
+<li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+</ul></nav></div></header>
+<main id="main">
+<article>
+<header class="proj-head"><div class="wrap narrow">
+<nav aria-label="Breadcrumb" class="crumbs"><a href="../index.html#projects">← All projects</a></nav>
+<p class="eyebrow">Automation</p>
+<h1>Atomic Deployment Strategy</h1>
+<p class="lead">Zero-downtime releases with instant, automated rollback.</p>
+<ul class="tags"><li>Docker</li><li>GitHub Actions</li><li>Jenkins</li><li>Nginx</li><li>Linux</li></ul>
+</div></header>
+<div class="wrap narrow">
+<section class="block"><h2>Overview</h2><p>An atomic (zero-downtime) deployment strategy designed to eliminate service interruptions and make releases safe and reversible in production.</p></section>
+<section class="block"><h2>Problem</h2><p>Traditional deployment methods introduced downtime during updates, hurting user experience and reliability. Rollbacks were manual and error-prone.</p></section>
+<section class="block"><h2>Solution</h2><ul class="list"><li>Blue-green / immutable deployments</li><li>Versioned release directories</li><li>Symlink switching for instant cutover</li><li>Automated rollback mechanism</li></ul></section>
+<section class="block"><h2>Architecture</h2><figure><img src="../images/atomic.webp" alt="Atomic deployment architecture diagram" loading="lazy" width="1400" height="760"><figcaption>Atomic deployment architecture</figcaption></figure></section>
+<section class="block"><h2>Impact</h2><ul class="list"><li>Achieved zero-downtime deployments</li><li>Reduced deployment risk with instant rollback</li><li>Improved system reliability and uptime</li></ul></section>
+<section class="block"><h2>Lessons learned</h2><ul class="list"><li>Rollback strategies must be automated, not manual</li><li>Observability is critical during deployments</li><li>Immutable infrastructure simplifies debugging</li></ul></section>
 
-<header>
-  <h1>Atomic Deployment Strategy</h1>
-</header>
-
-<div class="container">
-
-  <section>
-    <h2>Overview</h2>
-    <p>
-      This project implements an <strong>atomic (zero-downtime) deployment strategy</strong> 
-      designed to eliminate service interruptions and ensure safe, reversible releases 
-      in production environments.
-    </p>
-  </section>
-
-  <section>
-    <h2>Problem Statement</h2>
-    <p>
-      Traditional deployment methods introduced downtime during updates, negatively impacting 
-      user experience and system reliability. Rollbacks were manual and error-prone.
-    </p>
-  </section>
-
-  <section>
-    <h2>Solution</h2>
-    <p>
-      Designed and implemented a deployment pipeline using atomic release principles:
-    </p>
-    <ul>
-      <li>Blue-Green / Immutable deployments</li>
-      <li>Versioned release directories</li>
-      <li>Symlink switching for instant cutover</li>
-      <li>Automated rollback mechanism</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Architecture</h2>
-    <div class="architecture">
-      <img src="../images/atomic.png" alt="Atomic Deployment Architecture Diagram">
-    </div>
-  </section>
-
-  <section>
-    <h2>Tech Stack</h2>
-    <div>
-      <span class="tag">Docker</span>
-      <span class="tag">CI/CD (GitHub Actions / Jenkins)</span>
-      <span class="tag">Nginx</span>
-      <span class="tag">Linux</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>Impact</h2>
-    <ul>
-      <li>Achieved zero-downtime deployments</li>
-      <li>Reduced deployment risk with instant rollback</li>
-      <li>Improved system reliability and uptime</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Lessons Learned</h2>
-    <ul>
-      <li>Rollback strategies must be automated, not manual</li>
-      <li>Observability is critical during deployments</li>
-      <li>Immutable infrastructure simplifies debugging</li>
-    </ul>
-  </section>
-
-</div>
-
-<footer>
-  © 2025 Oyewole
-</footer>
-
-</body>
-</html>
+<nav class="pager" aria-label="More projects"><a href="cicd.html"><small>Previous</small>End-to-End CI/CD Pipeline</a><a href="backup.html" class="r"><small>Next</small>Automated Database Backup</a></nav>
+</div></article></main>
+<footer class="site-footer"><div class="wrap">
+<p>© 2026 Oyewole Olatokun. All rights reserved.</p>
+<ul>
+<li><a href="https://github.com/woletokun" rel="noopener">GitHub</a></li>
+<li><a href="https://www.linkedin.com/pulse/building-production-style-devops-platform-hands-on-journey-olatokun-uxg5f/" rel="noopener">Article</a></li>
+<li><a href="mailto:wole.tokun@gmail.com">Email</a></li>
+</ul></div></footer>
+</body></html>

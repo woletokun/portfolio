@@ -1,170 +1,56 @@
-<!-- Save as: projects/backup.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Automated Database Backup | DevOps Project</title>
-
-  <style>
-    body {
-      font-family: "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #020617;
-      padding: 20px 40px;
-      border-bottom: 1px solid #1e293b;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-      color: #38bdf8;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    section {
-      margin-bottom: 40px;
-      padding: 20px;
-      background: #020617;
-      border: 1px solid #1e293b;
-      border-radius: 10px;
-    }
-
-    h2 {
-      color: #38bdf8;
-      margin-bottom: 10px;
-      font-size: 22px;
-    }
-
-    p {
-      margin: 10px 0;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #1e293b;
-      padding: 6px 12px;
-      border-radius: 6px;
-      margin-right: 8px;
-      font-size: 14px;
-    }
-
-    .architecture img {
-      width: 100%;
-      max-width: 800px;
-      border-radius: 8px;
-      margin-top: 15px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #94a3b8;
-      border-top: 1px solid #1e293b;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automated Database Backup | Oyewole Olatokun</title>
+<meta name="description" content="Scheduled, encrypted backups with retention and restore testing.">
+<meta name="author" content="Oyewole Olatokun">
+<meta name="theme-color" content="#0b1220">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Automated Database Backup | Oyewole Olatokun">
+<meta property="og:description" content="Scheduled, encrypted backups with retention and restore testing.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
-
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="../index.html" aria-label="Oyewole Olatokun home"><span class="logo" aria-hidden="true">OO</span>Oyewole Olatokun</a>
+<nav aria-label="Primary"><ul>
+<li><a href="../index.html#about">About</a></li>
+<li><a href="../index.html#skills">Skills</a></li>
+<li><a href="../index.html#projects">Projects</a></li>
+<li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+</ul></nav></div></header>
+<main id="main">
+<article>
+<header class="proj-head"><div class="wrap narrow">
+<nav aria-label="Breadcrumb" class="crumbs"><a href="../index.html#projects">← All projects</a></nav>
+<p class="eyebrow">Reliability</p>
+<h1>Automated Database Backup</h1>
+<p class="lead">Scheduled, encrypted backups with retention and restore testing.</p>
+<ul class="tags"><li>Bash</li><li>Cron</li><li>AWS S3</li><li>Docker</li><li>CI/CD</li></ul>
+</div></header>
+<div class="wrap narrow">
+<section class="block"><h2>Overview</h2><p>A reliable, automated database backup system built for data durability, integrity and rapid recovery.</p></section>
+<section class="block"><h2>Problem</h2><p>Manual backup processes were inconsistent and prone to human error, risking data loss and leaving no recovery guarantees during incidents.</p></section>
+<section class="block"><h2>Solution</h2><ul class="list"><li>Scheduled backups using cron jobs / CI pipelines</li><li>Secure storage in cloud or remote servers</li><li>Retention policy for lifecycle management</li><li>Compression and encryption of backup data</li><li>Automated restore testing for validation</li></ul></section>
+<section class="block"><h2>Architecture</h2><figure><img src="../images/backup-architecture.webp" alt="Backup system architecture diagram" loading="lazy" width="1400" height="760"><figcaption>Backup system architecture</figcaption></figure></section>
+<section class="block"><h2>Impact</h2><ul class="list"><li>Improved data safety and reliability</li><li>Reduced operational risk and human error</li><li>Enabled fast recovery during incidents</li><li>Supported data retention policies</li></ul></section>
+<section class="block"><h2>Lessons learned</h2><ul class="list"><li>Backups are useless without tested restore procedures</li><li>Encryption is critical for sensitive data</li><li>Monitoring and alerting should be integrated</li></ul></section>
 
-<header>
-  <h1>Automated Database Backup System</h1>
-</header>
-
-<div class="container">
-
-  <section>
-    <h2>Overview</h2>
-    <p>
-      This project focuses on designing a reliable and automated database backup system 
-      to ensure data durability, integrity, and rapid recovery in case of failure.
-    </p>
-  </section>
-
-  <section>
-    <h2>Problem Statement</h2>
-    <p>
-      Manual backup processes were inconsistent and prone to human error, leading to 
-      potential data loss and lack of recovery guarantees during critical incidents.
-    </p>
-  </section>
-
-  <section>
-    <h2>Solution</h2>
-    <p>
-      Implemented an automated backup pipeline with the following features:
-    </p>
-    <ul>
-      <li>Scheduled backups using cron jobs / CI pipelines</li>
-      <li>Secure storage (cloud or remote servers)</li>
-      <li>Retention policy for lifecycle management</li>
-      <li>Compression and encryption of backup data</li>
-      <li>Automated restore testing for validation</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Architecture</h2>
-    <div class="architecture">
-      <img src="../images/backup-architecture.png" alt="Backup System Architecture Diagram">
-    </div>
-  </section>
-
-  <section>
-    <h2>Tech Stack</h2>
-    <div>
-      <span class="tag">Bash / Shell Scripting</span>
-      <span class="tag">Cron Jobs</span>
-      <span class="tag">AWS S3 / Cloud Storage</span>
-      <span class="tag">Docker</span>
-      <span class="tag">CI/CD Pipelines</span>
-    </div>
-  </section>
-
-  <section>
-    <h2>Impact</h2>
-    <ul>
-      <li>Improved data safety and reliability</li>
-      <li>Reduced operational risk and human error</li>
-      <li>Enabled fast recovery during incidents</li>
-      <li>Ensured compliance with data retention policies</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Lessons Learned</h2>
-    <ul>
-      <li>Backups are useless without tested restore procedures</li>
-      <li>Encryption is critical for sensitive data</li>
-      <li>Monitoring and alerting should be integrated</li>
-    </ul>
-  </section>
-
-</div>
-
-<footer>
-  © 2026 Oyewole Project
-</footer>
-
-</body>
-</html>
+<nav class="pager" aria-label="More projects"><a href="atomic.html"><small>Previous</small>Atomic Deployment Strategy</a><a href="cms.html" class="r"><small>Next</small>Customer Management Infrastructure</a></nav>
+</div></article></main>
+<footer class="site-footer"><div class="wrap">
+<p>© 2026 Oyewole Olatokun. All rights reserved.</p>
+<ul>
+<li><a href="https://github.com/woletokun" rel="noopener">GitHub</a></li>
+<li><a href="https://www.linkedin.com/pulse/building-production-style-devops-platform-hands-on-journey-olatokun-uxg5f/" rel="noopener">Article</a></li>
+<li><a href="mailto:wole.tokun@gmail.com">Email</a></li>
+</ul></div></footer>
+</body></html>

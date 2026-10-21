@@ -1,23 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Monitoring Case Study</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multi-Tenant SaaS Platform | Oyewole Olatokun</title>
+<meta name="description" content="Multi-tenant SaaS on AWS with a dedicated subdomain and isolated database per customer.">
+<meta name="author" content="Oyewole Olatokun">
+<meta name="theme-color" content="#0b1220">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Multi-Tenant SaaS Platform | Oyewole Olatokun">
+<meta property="og:description" content="Multi-tenant SaaS on AWS with a dedicated subdomain and isolated database per customer.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+<a class="brand" href="../index.html" aria-label="Oyewole Olatokun home"><span class="logo" aria-hidden="true">OO</span>Oyewole Olatokun</a>
+<nav aria-label="Primary"><ul>
+<li><a href="../index.html#about">About</a></li>
+<li><a href="../index.html#skills">Skills</a></li>
+<li><a href="../index.html#projects">Projects</a></li>
+<li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+</ul></nav></div></header>
+<main id="main">
+<article>
+<header class="proj-head"><div class="wrap narrow">
+<nav aria-label="Breadcrumb" class="crumbs"><a href="../index.html#projects">← All projects</a></nav>
+<p class="eyebrow">Cloud Infrastructure</p>
+<h1>Multi-Tenant SaaS Platform</h1>
+<p class="lead">Multi-tenant SaaS on AWS with a dedicated subdomain and isolated database per customer.</p>
+<ul class="tags"><li>AWS</li><li>Docker</li><li>PostgreSQL</li><li>Redis</li><li>Celery</li><li>Nginx</li><li>Route 53</li></ul>
+</div></header>
+<div class="wrap narrow">
+<section class="block"><h2>Overview</h2><p>Designed and deployed a scalable multi-tenant SaaS architecture where each customer receives a dedicated subdomain and an isolated database.</p></section>
+<section class="block"><h2>Problem</h2><p>The product needed to onboard many customers on shared infrastructure without compromising data isolation or deployment speed.</p></section>
+<section class="block"><h2>Solution</h2><ul class="list"><li>Wildcard DNS and AWS ALB routing for subdomain-based tenancy</li><li>Per-tenant database isolation</li><li>Docker containerized services</li><li>Redis caching and Celery asynchronous workers</li><li>Dynamic tenant provisioning</li><li>CI/CD for automated deployments</li></ul></section>
+<section class="block"><h2>Architecture</h2><figure><img src="../images/architecture.webp" alt="Multi-tenant SaaS architecture diagram" loading="lazy" width="1400" height="760"><figcaption>Multi-tenant SaaS architecture</figcaption></figure></section>
+<section class="block"><h2>Impact</h2><ul class="list"><li>Scalable multi-tenant architecture</li><li>Automated deployments</li><li>Isolated tenant data</li></ul></section>
 
-<h1>Multi-Tenant SaaS Infrastructure</h1>
-
-<h2>Problem</h2>
-<p>Need scalable multi-tenant system.</p>
-
-<h2>Solution</h2>
-<p>Implemented AWS ALB + wildcard routing + CI/CD.</p>
-
-<h2>Impact</h2>
+<nav class="pager" aria-label="More projects"><a href="devops-platform.html"><small>Previous</small>Production-Style DevOps Platform</a><a href="monitoring.html" class="r"><small>Next</small>Production Monitoring Stack</a></nav>
+</div></article></main>
+<footer class="site-footer"><div class="wrap">
+<p>© 2026 Oyewole Olatokun. All rights reserved.</p>
 <ul>
-<li>Scalable architecture</li>
-<li>Automated deployments</li>
-</ul>
-
-</body>
-</html>
+<li><a href="https://github.com/woletokun" rel="noopener">GitHub</a></li>
+<li><a href="https://www.linkedin.com/pulse/building-production-style-devops-platform-hands-on-journey-olatokun-uxg5f/" rel="noopener">Article</a></li>
+<li><a href="mailto:wole.tokun@gmail.com">Email</a></li>
+</ul></div></footer>
+</body></html>
